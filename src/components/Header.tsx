@@ -20,15 +20,13 @@ export default function Header() {
                 <nav className="hidden md:flex space-x-8 text-sm font-medium">
                     <Link href="/" className="hover:text-amber-400 transition">Trang chủ</Link>
                     <Link href="/reviews" className="hover:text-amber-400 transition">Bài Review</Link>
+                    <Link href="/places" className="hover:text-amber-400 transition">Địa điểm ẩm thực</Link>
+                    <Link href="/explore" className="hover:text-amber-400 transition">Khám phá</Link>
+                    <Link href="/community" className="hover:text-amber-400 transition">Cộng đồng</Link>
+                    <Link href="/partnership" className="hover:text-amber-400 transition">Hợp tác</Link>
                     <Link href="/about" className="hover:text-amber-400 transition">Giới thiệu</Link>
                     <Link href="/contact" className="hover:text-amber-400 transition">Liên hệ</Link>
                 </nav>
-
-                <div className="hidden md:block">
-                    <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-4 py-2 rounded-md transition">
-                        Gửi Review
-                    </button>
-                </div>
 
                 <button
                     className="md:hidden p-2 text-white"
