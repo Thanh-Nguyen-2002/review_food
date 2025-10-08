@@ -1,5 +1,10 @@
-import { Mail, PhoneCall, DollarSign, Briefcase } from "lucide-react";
-
+import { Mail, PhoneCall, DollarSign } from "lucide-react";
+export const metadata = {
+    title: "Hợp Tác | ReviewFood",
+    description:
+        `Tìm hiểu về chính sách hợp tác quảng cáo của ReviewFood — nền tảng kết nối 
+        thương hiệu ẩm thực với cộng đồng người dùng, mang đến chiến dịch truyền thông hiệu quả và uy tín.`
+};
 const Advertising = () => {
     return (
         <section className="max-w-5xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">

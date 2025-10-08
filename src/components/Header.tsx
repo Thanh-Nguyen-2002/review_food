@@ -12,7 +12,9 @@ export default function Header() {
             <div className="max-w-[1500px] mx-auto px-6 flex items-center justify-between h-[100px]">
 
                 <div className="flex items-center space-x-2">
-                    <span className="text-2xl font-bold text-amber-400">ReviewFood</span>
+                    <Link  href="/" >
+                        <span className="text-2xl font-bold text-amber-400">ReviewFood</span>
+                    </Link>
                 </div>
 
                 <nav className="hidden md:flex space-x-8 text-sm font-medium">

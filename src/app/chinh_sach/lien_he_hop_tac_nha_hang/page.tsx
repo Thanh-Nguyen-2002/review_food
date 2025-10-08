@@ -1,5 +1,10 @@
 import { Mail, Map, PhoneCall, Utensils } from "lucide-react";
-
+export const metadata = {
+    title: "Liên Hệ Hợp Tác Nhà Hàng | ReviewFood",
+    description:
+        `Kết nối cùng ReviewFood để hợp tác quảng bá nhà hàng, mở rộng tệp khách hàng và nâng cao 
+        hình ảnh thương hiệu trong cộng đồng yêu ẩm thực Việt Nam.`,
+};
 const RestaurantCooperation = () => {
     return (
         <section className="max-w-5xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">

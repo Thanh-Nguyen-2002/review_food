@@ -1,5 +1,10 @@
 import { Mail, Map, PhoneCall } from "lucide-react";
-
+export const metadata = {
+    title: "Chính sách | ReviewFood",
+    description:
+    `Tìm hiểu cách ReviewFood thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn. 
+    Cam kết bảo mật, minh bạch và an toàn tuyệt đối.`
+}
 const Security = () => {
     return (
         <section className="max-w-5xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">

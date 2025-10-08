@@ -1,5 +1,10 @@
 import { Mail, PhoneCall, Shield } from "lucide-react";
-
+export const metadata = {
+    title: "Chính sách | ReviewFood",
+    description:
+    `Tìm hiểu các điều khoản sử dụng dịch vụ của ReviewFood — quy định về quyền, 
+    nghĩa vụ và trách nhiệm của người dùng khi tham gia cộng đồng ẩm thực.`,
+}
 const Terms = () => {
     return (
         <section className="max-w-5xl mx-auto px-4 py-10 text-gray-800 leading-relaxed">

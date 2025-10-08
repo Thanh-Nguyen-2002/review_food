@@ -31,7 +31,7 @@ export default function Loading() {
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white overflow-hidden">
-      {/* Spinner trung tâm */}
+
       <div
         className={`relative w-36 h-36 z-20 transition-opacity duration-700 ${
           startOpen ? "opacity-0" : "opacity-100"
@@ -59,7 +59,6 @@ export default function Loading() {
         ></div>
       </div>
 
-      {/* Nền trắng dưới spinner */}
       <div
         className={`absolute inset-0 bg-white transition-opacity duration-700 ${
           startOpen ? "opacity-0" : "opacity-100"
