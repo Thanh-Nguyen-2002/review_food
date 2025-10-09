@@ -23,7 +23,7 @@ export default function Header() {
                     <Link href="/places" className="hover:text-amber-400 transition">Địa điểm ẩm thực</Link>
                     <Link href="/explore" className="hover:text-amber-400 transition">Khám phá</Link>
                     <Link href="/community" className="hover:text-amber-400 transition">Cộng đồng</Link>
-                    <Link href="/partnership" className="hover:text-amber-400 transition">Hợp tác</Link>
+                    <Link href="/hop_tac" className="hover:text-amber-400 transition">Hợp tác</Link>
                     <Link href="/about" className="hover:text-amber-400 transition">Giới thiệu</Link>
                     <Link href="/contact" className="hover:text-amber-400 transition">Liên hệ</Link>
                 </nav>

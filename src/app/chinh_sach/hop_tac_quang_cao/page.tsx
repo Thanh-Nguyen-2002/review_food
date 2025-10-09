@@ -1,6 +1,6 @@
 import { Mail, PhoneCall, DollarSign } from "lucide-react";
 export const metadata = {
-    title: "Hợp Tác | ReviewFood",
+    title: "Hợp Tác Quảng Cáo | ReviewFood",
     description:
         `Tìm hiểu về chính sách hợp tác quảng cáo của ReviewFood — nền tảng kết nối 
         thương hiệu ẩm thực với cộng đồng người dùng, mang đến chiến dịch truyền thông hiệu quả và uy tín.`
