@@ -57,7 +57,7 @@ export default function Footer() {
                     <p className="text-sm mb-3 opacity-90">
                         Đăng ký email để nhận <span className="text-amber-400 font-semibold">mẹo ăn ngon & ưu đãi mới nhất!</span>
                     </p>
-                    <form className="flex flex-col sm:flex-row items-center sm:items-stretch gap-3">
+                    <form className="flex flex-col items-center sm:items-stretch gap-3">
                         <input
                             type="email"
                             placeholder="Nhập email của bạn..."
@@ -70,6 +70,7 @@ export default function Footer() {
                         >
                             Gửi
                         </button>
+
                     </form>
                 </div>
             </div>

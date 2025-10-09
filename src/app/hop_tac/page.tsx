@@ -13,7 +13,7 @@ export default function Partnership() {
             <div className="max-w-[1500px] mx-auto space-y-16 p-6">
                 <RevealOnScroll>
                     <section className="text-center">
-                        <h1 className="text-5xl font-extrabold text-amber-500 mb-6 animate-fade-in">
+                        <h1 className="text-5xl font-extrabold text-yellow-500 mb-6 animate-fade-in">
                             Cơ Hội Hợp Tác
                         </h1>
                         <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed animate-fade-in delay-100">
@@ -25,22 +25,22 @@ export default function Partnership() {
 
                 <RevealOnScroll delay={200}>
                     <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up">
-                        <h2 className="text-4xl font-bold text-amber-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
+                        <h2 className="text-4xl font-bold text-yellow-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Tại Sao Nên Hợp Tác Với Chúng Tôi?
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md transition-transform hover:scale-105 duration-300 border border-gray-200">
-                                <TrendingUp className="text-amber-500 mb-4" size={48} strokeWidth={1.5} />
+                                <TrendingUp className="text-yellow-500 mb-4" size={48} strokeWidth={1.5} />
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-2">Tiếp Cận Cộng Đồng Lớn</h3>
                                 <p className="text-gray-600">Hàng ngàn người dùng đam mê ẩm thực trên toàn quốc.</p>
                             </div>
                             <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md transition-transform hover:scale-105 duration-300 border border-gray-200">
-                                <Lightbulb className="text-amber-500 mb-4" size={48} strokeWidth={1.5} />
+                                <Lightbulb className="text-yellow-500 mb-4" size={48} strokeWidth={1.5} />
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-2">Giải Pháp Sáng Tạo</h3>
                                 <p className="text-gray-600">Các chiến dịch tiếp thị và quảng bá độc đáo, hiệu quả.</p>
                             </div>
                             <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md transition-transform hover:scale-105 duration-300 border border-gray-200">
-                                <Users className="text-amber-500 mb-4" size={48} strokeWidth={1.5} />
+                                <Users className="text-yellow-500 mb-4" size={48} strokeWidth={1.5} />
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-2">Hỗ Trợ Chuyên Nghiệp</h3>
                                 <p className="text-gray-600">Đội ngũ tận tâm luôn đồng hành cùng đối tác.</p>
                             </div>
@@ -50,12 +50,12 @@ export default function Partnership() {
 
                 <RevealOnScroll delay={300}>
                     <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up delay-200">
-                        <h2 className="text-4xl font-bold text-amber-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
+                        <h2 className="text-4xl font-bold text-yellow-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Hình Thức Hợp Tác Đa Dạng
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="flex items-start p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                                <Briefcase className="text-amber-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
+                                <Briefcase className="text-yellow-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
                                 <div>
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-2">Quảng Cáo & Tiếp Thị</h3>
                                     <p className="text-gray-600">
@@ -64,7 +64,7 @@ export default function Partnership() {
                                 </div>
                             </div>
                             <div className="flex items-start p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                                <Handshake className="text-amber-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
+                                <Handshake className="text-yellow-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
                                 <div>
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-2">Tài Trợ Sự Kiện</h3>
                                     <p className="text-gray-600">
@@ -73,7 +73,7 @@ export default function Partnership() {
                                 </div>
                             </div>
                             <div className="flex items-start p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                                <CheckCircle className="text-amber-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
+                                <CheckCircle className="text-yellow-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
                                 <div>
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-2">Hợp Tác Nội Dung</h3>
                                     <p className="text-gray-600">
@@ -82,7 +82,7 @@ export default function Partnership() {
                                 </div>
                             </div>
                             <div className="flex items-start p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                                <Users className="text-amber-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
+                                <Users className="text-yellow-500 mr-4 mt-1" size={32} strokeWidth={1.5} />
                                 <div>
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-2">Đối Tác Chiến Lược</h3>
                                     <p className="text-gray-600">
@@ -96,7 +96,7 @@ export default function Partnership() {
 
                 <RevealOnScroll delay={400}>
                     <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up delay-400">
-                        <h2 className="text-4xl font-bold text-amber-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
+                        <h2 className="text-4xl font-bold text-yellow-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Quy Trình Hợp Tác
                         </h2>
                         <ol className="relative border-l-2 border-amber-500 ml-4 md:ml-0">
@@ -134,7 +134,7 @@ export default function Partnership() {
 
                 <RevealOnScroll delay={500}>
                     <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up delay-600">
-                        <h2 className="text-4xl font-bold text-amber-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
+                        <h2 className="text-4xl font-bold text-yellow-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Liên Hệ Với Chúng Tôi
                         </h2>
                         <p className="text-lg text-gray-700 mb-8 text-center max-w-2xl mx-auto">
@@ -142,21 +142,21 @@ export default function Partnership() {
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                                <Mail className="text-amber-500 mb-4" size={48} strokeWidth={1.5} />
+                                <Mail className="text-yellow-500 mb-4" size={48} strokeWidth={1.5} />
                                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
                                 <a href="mailto:partnership@reviewfood.com" className="text-blue-600 hover:underline">
                                     nxthanh@gmail.com
                                 </a>
                             </div>
                             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                                <Phone className="text-amber-500 mb-4" size={48} strokeWidth={1.5} />
+                                <Phone className="text-yellow-500 mb-4" size={48} strokeWidth={1.5} />
                                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Điện thoại</h3>
                                 <a href="tel:+84987654321" className="text-blue-600 hover:underline">
                                     +84 377 648 322
                                 </a>
                             </div>
                             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                                <MapPin className="text-amber-500 mb-4" size={48} strokeWidth={1.5} />
+                                <MapPin className="text-yellow-500 mb-4" size={48} strokeWidth={1.5} />
                                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Văn phòng</h3>
                                 <p className="text-gray-600">546 Đường Trần Cung, Cổ Nhuế 1, Nam Từ Liêm, Hà Nội</p>
                             </div>
@@ -166,7 +166,7 @@ export default function Partnership() {
 
                 <RevealOnScroll delay={600}>
                     <section className="bg-white p-10 rounded-lg shadow-lg animate-slide-up delay-800">
-                        <h2 className="text-4xl font-bold text-amber-500 text-center mb-8 border-b-2 border-amber-500 pb-2 inline-block">
+                        <h2 className="text-4xl font-bold text-yellow-500 text-center mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Gửi Yêu Cầu Hợp Tác
                         </h2>
                         <form className="max-w-2xl mx-auto space-y-6">

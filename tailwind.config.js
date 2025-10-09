@@ -2,6 +2,8 @@ module.exports = {
     content: [
         "./src/**/*.{js,jsx,ts,tsx}",
         "./public/index.html",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         extend: {
@@ -27,5 +29,12 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    safelist: [
+        'bg-orange-50', 'bg-green-50', 'bg-blue-50', 'bg-red-50', 'bg-purple-50',
+        'bg-orange-400', 'bg-green-400', 'bg-blue-400', 'bg-red-400', 'bg-purple-400',
+        'hover:bg-orange-500', 'hover:bg-green-500', 'hover:bg-blue-500', 'hover:bg-red-500', 'hover:bg-purple-500',
+    ],
+    plugins: [
+        require('@tailwindcss/line-clamp'),
+    ]
 }
