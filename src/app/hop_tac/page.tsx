@@ -1,7 +1,12 @@
 import React from 'react';
 import { Briefcase, Handshake, Mail, Phone, MapPin, Lightbulb, TrendingUp, Users, CheckCircle } from 'lucide-react';
 import RevealOnScroll from '@/components/RevealOnScroll';
-
+export const metadata = {
+    title: "Hợp tác | ReviewFood",
+    description:
+        `ReviewFood tìm kiếm cơ hội hợp tác cùng các nhà hàng, thương hiệu ẩm thực, KOL và đối tác truyền thông 
+        để mang đến trải nghiệm ẩm thực chân thực và giá trị cho cộng đồng yêu ăn uống.`
+};
 export default function Partnership() {
     return (
         <div className="min-h-screen bg-white text-gray-800 py-12 px-4 sm:px-6 lg:px-8">
