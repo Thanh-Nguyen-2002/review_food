@@ -120,7 +120,7 @@ export default function Community() {
                             </section>
                         </RevealOnScroll>
 
-                        <RevealOnScroll delay={300}>
+                        <RevealOnScroll delay={200}>
                             <section className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                                 <div className="flex justify-between items-center mb-4">
                                     <h2 className="text-2xl font-bold flex items-center">
@@ -182,7 +182,7 @@ export default function Community() {
                             </section>
                         </RevealOnScroll>
 
-                        <RevealOnScroll delay={400}>
+                        <RevealOnScroll delay={200}>
                             <section className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                                 <div className="flex justify-between items-center mb-4">
                                     <h2 className="text-2xl font-bold flex items-center">
@@ -300,7 +300,7 @@ export default function Community() {
                             </section>
                         </RevealOnScroll>
 
-                        <RevealOnScroll delay={300}>
+                        <RevealOnScroll delay={200}>
                             <section className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                                 <h2 className="text-2xl font-bold flex items-center mb-4">
                                     <Zap className="text-orange-500 w-6 h-6 mr-2" />Hành Động Nhanh
@@ -330,7 +330,7 @@ export default function Community() {
                             </section>
                         </RevealOnScroll>
 
-                        <RevealOnScroll delay={400}>
+                        <RevealOnScroll delay={200}>
                             <section className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
                                 <h2 className="text-2xl font-bold flex items-center mb-4">
                                     <Tags className="text-yellow-500 w-6 h-6 mr-2" /> Hashtag Thịnh Hành

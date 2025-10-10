@@ -48,7 +48,7 @@ export default function Partnership() {
                     </section>
                 </RevealOnScroll>
 
-                <RevealOnScroll delay={300}>
+                <RevealOnScroll delay={200}>
                     <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up delay-200">
                         <h2 className="text-4xl font-bold text-yellow-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Hình Thức Hợp Tác Đa Dạng
@@ -94,7 +94,7 @@ export default function Partnership() {
                     </section>
                 </RevealOnScroll>
 
-                <RevealOnScroll delay={400}>
+                <RevealOnScroll delay={200}>
                     <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up delay-400">
                         <h2 className="text-4xl font-bold text-yellow-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Quy Trình Hợp Tác
@@ -132,7 +132,7 @@ export default function Partnership() {
                     </section>
                 </RevealOnScroll>
 
-                <RevealOnScroll delay={500}>
+                <RevealOnScroll delay={200}>
                     <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up delay-600">
                         <h2 className="text-4xl font-bold text-yellow-500 mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Liên Hệ Với Chúng Tôi
@@ -164,8 +164,8 @@ export default function Partnership() {
                     </section>
                 </RevealOnScroll>
 
-                <RevealOnScroll delay={600}>
-                    <section className="bg-white p-10 rounded-lg shadow-lg animate-slide-up delay-800">
+                <RevealOnScroll delay={200}>
+                    <section className="bg-gray-50 p-10 rounded-lg shadow-lg animate-slide-up delay-800">
                         <h2 className="text-4xl font-bold text-yellow-500 text-center mb-8 border-b-2 border-amber-500 pb-2 inline-block">
                             Gửi Yêu Cầu Hợp Tác
                         </h2>

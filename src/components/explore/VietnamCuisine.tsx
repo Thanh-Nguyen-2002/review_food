@@ -1,4 +1,5 @@
 import { Soup, Drumstick, Fish, Star } from "lucide-react";
+import RevealOnScroll from "../RevealOnScroll";
 
 interface Region {
     name: string;
@@ -47,45 +48,48 @@ export default function VietnamCuisine() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                {regions.map((region) => (
-                    <div
-                        key={region.name}
-                        className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300"
-                    >
-                        <div className="flex flex-col items-center text-center mb-6">
-                            {region.icon}
-                            <h3 className="text-2xl font-semibold mt-4">{region.name}</h3>
+                {regions.map((region, i) => (
+                    <RevealOnScroll key={region.name} delay={150 * i}>
+                        <div
+                            
+                            className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300"
+                        >
+                            <div className="flex flex-col items-center text-center mb-6">
+                                {region.icon}
+                                <h3 className="text-2xl font-semibold mt-4">{region.name}</h3>
+                            </div>
+
+                            <ul className="space-y-4 mb-6">
+                                {region.dishes.map((dish) => (
+                                    <li
+                                        key={dish.name}
+                                        className="flex items-center justify-between text-gray-700"
+                                    >
+                                        <span>{dish.name}</span>
+                                        <span className="flex items-center text-yellow-500 font-medium">
+                                            {dish.rating}
+                                            <Star className="w-4 h-4 ml-1 fill-yellow-400" />
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <button className="w-full border border-yellow-400 text-yellow-600 font-medium py-3 rounded-lg 
+                                hover:bg-yellow-500 hover:text-white transition duration-300 cursor-pointer">
+                                Khám Phá Ngay
+                            </button>
                         </div>
-
-                        <ul className="space-y-4 mb-6">
-                            {region.dishes.map((dish) => (
-                                <li
-                                    key={dish.name}
-                                    className="flex items-center justify-between text-gray-700"
-                                >
-                                    <span>{dish.name}</span>
-                                    <span className="flex items-center text-yellow-500 font-medium">
-                                        {dish.rating}
-                                        <Star className="w-4 h-4 ml-1 fill-yellow-400" />
-                                    </span>
-                                </li>
-                            ))}
-                        </ul>
-
-                        <button className="w-full border border-yellow-400 text-yellow-600 font-medium py-3 rounded-lg 
-                            hover:bg-yellow-500 hover:text-white transition duration-300 cursor-pointer">
-                            Khám Phá Ngay
-                        </button>
-                    </div>
+                    </RevealOnScroll>
                 ))}
             </div>
-
-            <div className="text-center mt-16">
-                <p className="text-gray-700 text-lg">
-                        “Ẩm thực Việt – nơi hương vị kết nối trái tim.”
-                </p>
-                <div className="mt-3 h-[2px] w-32 bg-yellow-400 mx-auto rounded-full" />
-            </div>
+            <RevealOnScroll delay={200}>
+                <div className="text-center mt-16">
+                    <p className="text-gray-700 text-lg">
+                            “Ẩm thực Việt – nơi hương vị kết nối trái tim.”
+                    </p>
+                    <div className="mt-3 h-[2px] w-32 bg-yellow-400 mx-auto rounded-full" />
+                </div>
+            </RevealOnScroll>
         </section>
     );
 }
