@@ -2,6 +2,8 @@
 import { useState } from "react";
 import RevealOnScroll from "./RevealOnScroll";
 import Image from "next/image";
+import { MapPinned } from "lucide-react";
+import InfoBox from "./animations/InfoBox";
 
 interface Marker {
     id: number;
@@ -212,18 +214,25 @@ const markers: Marker[] = [
         id: 22,
         name: "An Giang",
         region: "Miền Tây – Đất mũi",
-        top: "91%",
-        left: "26.5%",
+        top: "89%",
+        left: "21.5%",
         desc: "Ba khía rang me, cua Cà Mau – món ngon nơi tận cùng Tổ quốc.",
         image: "/images/ca_mau_food.jpg",
     },
 ];
 
 export default function MapVietnam() {
-    const [selected, setSelected] = useState<Marker | null>(null);
+    const [selected, setetSelected] = useState<number | null>(1)
+    const [selectedNane, setSelectedName] = useState("Hà Nội")
 
+    const dataView = markers.find(i => i.name === selectedNane)
+
+    const handleClick = (value:Marker) => {
+        setSelectedName(value.name)
+        setetSelected(value.id)
+    }
     return (
-        <section className="bg-white text-black pb-20 px-6 max-w-[1500px] mx-auto relative">
+        <section className="bg-white text-black pb-10 px-6 max-w-[1500px] mx-auto relative">
             <div className="relative mx-auto max-w-[600px] aspect-[3/4]">
                 {markers.map((m, i) => (
                     <div
@@ -235,14 +244,21 @@ export default function MapVietnam() {
                             {m.name}
                         </span>
 
-                        <button
-                            onClick={() => setSelected(m)}
-                            className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-yellow-500 border-2 border-white shadow-md 
-                                hover:scale-140 transition duration-300 cursor-pointer"
-                            title={m.name}
+                        <MapPinned 
+                            onClick={() => handleClick(m)}
+                            className={`w-5 h-5 ${m.id === selected ? "text-red-600 scale-140" : "text-yellow-600"} 
+                                hover:scale-140 transition duration-300 cursor-pointer`}
                         />
                     </div>
                 ))}
+
+                <div className="absolute top-3/5 left-0">
+                    {selectedNane &&
+                        <InfoBox 
+                            dataView={dataView}
+                        />
+                    }
+                </div>
             </div>
 
         </section>

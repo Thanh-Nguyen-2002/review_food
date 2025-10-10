@@ -5,6 +5,7 @@ import Image from "next/image";
 import AnimationShowContent from "@/components/animations/AnimationShowContent";
 import MapVietnam from "@/components/MapVietnam";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import FoodEvents from "@/components/place/FoodEvents";
 
 const places = [
     {
@@ -115,8 +116,8 @@ export default function Places() {
                                     <button
                                         key={i}
                                         onClick={() => setCurrent(i)}
-                                        className={`w-3 h-3 rounded-full transition-all cursor-pointer ${
-                                        i === current ? "bg-yellow-500 scale-110" : "bg-gray-300"
+                                            className={`w-3 h-3 rounded-full transition-all cursor-pointer ${
+                                            i === current ? "bg-yellow-500 scale-110" : "bg-gray-300"
                                         }`}
                                     >
 
@@ -143,6 +144,8 @@ export default function Places() {
             <RevealOnScroll delay={200}>
                 <MapVietnam />
             </RevealOnScroll>
+
+            <FoodEvents />
         </>
     );
 }
