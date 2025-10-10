@@ -3,9 +3,21 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
+    const pathName = usePathname()
+    const links = [
+        { href: "/", label: "Trang chủ" },
+        { href: "/reviews", label: "Bài Review" },
+        { href: "/dia_diem_am_thuc", label: "Địa điểm ẩm thực" },
+        { href: "/kham_pha", label: "Khám phá" },
+        { href: "/cong_dong", label: "Cộng đồng" },
+        { href: "/hop_tac", label: "Hợp tác" },
+        { href: "/about", label: "Giới thiệu" },
+        { href: "/contact", label: "Liên hệ" },
+    ];
 
     return (
         <header className="bg-black text-white fixed top-0 left-0 w-full z-50 border-b border-white/10 ">
@@ -18,14 +30,19 @@ export default function Header() {
                 </div>
 
                 <nav className="hidden md:flex space-x-8 text-sm font-medium">
-                    <Link href="/" className="hover:text-amber-400 transition">Trang chủ</Link>
-                    <Link href="/reviews" className="hover:text-amber-400 transition">Bài Review</Link>
-                    <Link href="/dia_diem_am_thuc" className="hover:text-amber-400 transition">Địa điểm ẩm thực</Link>
-                    <Link href="/kham_pha" className="hover:text-amber-400 transition">Khám phá</Link>
-                    <Link href="/cong_dong" className="hover:text-amber-400 transition">Cộng đồng</Link>
-                    <Link href="/hop_tac" className="hover:text-amber-400 transition">Hợp tác</Link>
-                    <Link href="/about" className="hover:text-amber-400 transition">Giới thiệu</Link>
-                    <Link href="/contact" className="hover:text-amber-400 transition">Liên hệ</Link>
+                    {links.map((link) => (
+                        <Link 
+                            key={link.href}
+                            href={link.href}
+                            className={`transition
+                                ${pathName === link.href
+                                ?  "text-amber-500 border-b-2 border-amber-500 pb-1" 
+                                :  "hover:text-amber-400" }
+                            `}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
                 </nav>
 
                 <button

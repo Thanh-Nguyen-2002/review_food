@@ -1,4 +1,6 @@
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, MailCheck, MapPinHouse, PhoneCall, Twitter } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export const metadata = {
@@ -7,13 +9,16 @@ export const metadata = {
     Đội ngũ ReviewFood luôn sẵn sàng giải đáp mọi thắc mắc về dịch vụ, hợp tác hoặc phản hồi.`
 }
 interface Props {
-    icon: string,
+    icon: React.ReactNode,
     title: string,
     content : React.ReactNode
 }
 const ContactDetail = ({ icon, title, content } : Props) => (
     <div className="flex flex-col items-center p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-        <img src={icon} alt={title} className="w-12 h-12 mb-4 filter invert" />
+
+        <div className="w-12 h-12 mb-4 filter invert flex items-center justify-center" >
+            {icon}
+        </div>
         <h2 className="text-xl font-semibold text-amber-400 mb-2">{title}</h2>
         <div className="text-gray-300 text-center">{content}</div>
     </div>
@@ -33,7 +38,7 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                     <ContactDetail
-                        icon="https://img.icons8.com/fluent/48/000000/address.png"
+                        icon={<MapPinHouse color='red' className='!text-white !w-10 !h-10'/>}
                         title="Địa chỉ"
                         content={
                             <>
@@ -43,7 +48,7 @@ export default function Contact() {
                         }
                     />
                     <ContactDetail
-                        icon="https://img.icons8.com/fluent/48/000000/mail.png"
+                        icon={<MailCheck color='red' className='text-white !w-10 !h-10'/>  }
                         title="Email"
                         content={
                             <a href="mailto:info@yourcompany.com">
@@ -52,7 +57,7 @@ export default function Contact() {
                         }
                     />
                     <ContactDetail
-                        icon="https://img.icons8.com/fluent/48/000000/phone.png"
+                        icon={<PhoneCall className='!w-10 !h-10' color='red'/>}
                         title="Điện thoại"
                         content={
                             <a href="tel:+84123456789">
@@ -67,29 +72,29 @@ export default function Contact() {
                         Kết nối với chúng tôi
                     </h2>
                     <div className="flex justify-center space-x-6">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                        <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
                             className="transform hover:scale-110 transition-transform duration-200 text-black hover:text-black"
                         >
                             <Facebook size={56} strokeWidth={1.5} />
-                        </a>
+                        </Link>
 
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
+                        <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
                             className="transform hover:scale-110 transition-transform duration-200 text-black"
                         >
                             <Twitter size={56} strokeWidth={1.5} />
-                        </a>
+                        </Link>
 
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+                        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
                             className="transform hover:scale-110 transition-transform duration-200 text-black"
                         >
                             <Linkedin size={56} strokeWidth={1.5} />
-                        </a>
+                        </Link>
 
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+                        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
                             className="transform hover:scale-110 transition-transform duration-200 text-black"
                         >
                             <Instagram size={56} strokeWidth={1.5} />
-                        </a>
+                        </Link>
                     </div>
                 </div>
 

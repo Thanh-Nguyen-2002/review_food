@@ -4,6 +4,7 @@ import RevealOnScroll from '@/components/RevealOnScroll';
 import { BookOpenText, CalendarDays, ChefHat, Clock, Crown, Flame, Heart, ImagePlus, MapPin,
     Medal, PencilLine, Salad, Soup, Tags, User, Users, Zap 
 }   from 'lucide-react';
+import Image from 'next/image';
 import React from 'react';
 
 export const metadata = {
@@ -51,7 +52,7 @@ export default function Community() {
                                             </div>
                                         </div>
                                         <p className="text-gray-600 text-sm italic mb-2">
-                                            "Bánh mì giòn tan, thịt nướng thơm lừng, rau sống tươi mát..."
+                                            &quot;Bánh mì giòn tan, thịt nướng thơm lừng, rau sống tươi mát...&quot;
                                         </p>
                                         <div className="flex items-center text-gray-500 text-xs">
                                             <span className="flex items-center mr-3">
@@ -77,7 +78,7 @@ export default function Community() {
                                             </div>
                                         </div>
                                         <p className="text-gray-600 text-sm italic mb-2">
-                                            "Phở ngon tuyệt vời, nước dùng đậm đà, nhớ bố tuổi ngọn..."
+                                            &quot;Phở ngon tuyệt vời, nước dùng đậm đà, nhớ bố tuổi ngọn...&quot;
                                         </p>
                                         <div className="flex items-center text-gray-500 text-xs">
                                             <span className="flex items-center mr-3">
@@ -102,7 +103,7 @@ export default function Community() {
                                         </div>
                                         
                                         <p className="text-gray-600 text-sm italic mb-2">
-                                            "Chè ngọt vừa phải, đậu đỏ mềm tan, nước cốt dừa thơm béo..."
+                                            &quot;Chè ngọt vừa phải, đậu đỏ mềm tan, nước cốt dừa thơm béo...&quot;
                                         </p>
                                         <div className="flex items-center text-gray-500 text-xs">
                                             <span className="flex items-center mr-3">
@@ -247,10 +248,12 @@ export default function Community() {
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-3">
                                             <div className="font-bold text-lg text-gray-700 w-3">1</div>
-                                            <img 
-                                                src="https://randomuser.me/api/portraits/men/32.jpg" 
+                                            <Image 
+                                                src="/images/about_us.jpg" 
                                                 alt="Foodie Master" 
                                                 className="w-10 h-10 rounded-full object-cover border-2 border-yellow-400" 
+                                                width={40}
+                                                height={40}
                                             />
                                             <div>
                                                 <p className="font-semibold">Foodie Master</p>
@@ -263,10 +266,12 @@ export default function Community() {
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-3">
                                             <div className="font-bold text-lg text-gray-700 w-3">2</div>
-                                            <img 
-                                                src="https://randomuser.me/api/portraits/women/44.jpg" 
+                                            <Image 
+                                                src="/images/about_us.jpg"  
                                                 alt="Taste Explorer" 
                                                 className="w-10 h-10 rounded-full object-cover border-2 border-orange-400" 
+                                                width={40}
+                                                height={40}
                                             />
                                             <div>
                                                 <p className="font-semibold">Taste Explorer</p>
@@ -279,10 +284,12 @@ export default function Community() {
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center space-x-3">
                                             <div className="font-bold text-lg text-gray-700 w-3">3</div>
-                                            <img 
-                                                src="https://randomuser.me/api/portraits/men/50.jpg" 
+                                            <Image 
+                                                src="/images/about_us.jpg" 
                                                 alt="Flavor Hunter" 
                                                 className="w-10 h-10 rounded-full object-cover border-2 border-green-400" 
+                                                width={40}
+                                                height={40}
                                             />
                                             <div>
                                                 <p className="font-semibold">Flavor Hunter</p>
