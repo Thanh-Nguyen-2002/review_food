@@ -20,7 +20,7 @@ export default function Header() {
                 <nav className="hidden md:flex space-x-8 text-sm font-medium">
                     <Link href="/" className="hover:text-amber-400 transition">Trang chủ</Link>
                     <Link href="/reviews" className="hover:text-amber-400 transition">Bài Review</Link>
-                    <Link href="/places" className="hover:text-amber-400 transition">Địa điểm ẩm thực</Link>
+                    <Link href="/dia_diem_am_thuc" className="hover:text-amber-400 transition">Địa điểm ẩm thực</Link>
                     <Link href="/kham_pha" className="hover:text-amber-400 transition">Khám phá</Link>
                     <Link href="/cong_dong" className="hover:text-amber-400 transition">Cộng đồng</Link>
                     <Link href="/hop_tac" className="hover:text-amber-400 transition">Hợp tác</Link>

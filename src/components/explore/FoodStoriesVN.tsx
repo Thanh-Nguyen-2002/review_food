@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { BookOpen, CalendarDays, ChevronDown, ChevronUp } from "lucide-react";
 import RevealOnScroll from "../RevealOnScroll";
-import { AnimatePresence, motion } from "framer-motion";
+import AnimationShowContent from "../animations/AnimationShowContent";
 
 export default function FoodStoriesVN() {
     const stories = [
@@ -61,19 +61,8 @@ export default function FoodStoriesVN() {
                                             isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                                         }`}
                                     >
-                                        <AnimatePresence>
-                                            {isOpen && (
-                                                <motion.div
-                                                    initial={{ opacity: 0, height: 0 }}
-                                                    animate={{ opacity: 1, height: "auto" }}
-                                                    exit={{ opacity: 0, height: 0 }}
-                                                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                                                    className="text-gray-600 text-sm mt-3"
-                                                >
-                                                    <p>{story.full}</p>
-                                                </motion.div>
-                                            )}
-                                        </AnimatePresence>
+                                        <AnimationShowContent content={story.full} isOpen={isOpen} />
+
                                     </div>
                                 </div>
 
