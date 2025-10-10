@@ -123,7 +123,7 @@ export default function Reviews() {
             <div className="mt-12 max-w-2xl mx-auto text-center border-t border-gray-200 pt-8">
                 <h3 className="text-xl font-semibold mb-4">Bình luận nổi bật</h3>
                 <p className="text-gray-700 italic">
-                    “Ẩm thực Việt Nam không chỉ là hương vị – đó là một hành trình của ký ức, tình người và quê hương.”
+                    &quot;Ẩm thực Việt Nam không chỉ là hương vị – đó là một hành trình của ký ức, tình người và quê hương.&quot;
                 </p>
                 <p className="text-sm text-yellow-600 mt-2">– Một người yêu phở –</p>
             </div>
