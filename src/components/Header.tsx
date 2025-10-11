@@ -12,6 +12,7 @@ export default function Header() {
         { href: "/", label: "Trang chủ" },
         { href: "/reviews", label: "Review" },
         { href: "/dia_diem_am_thuc", label: "Địa điểm ẩm thực" },
+        { href: "/bai_viet", label: "Blog" },
         { href: "/kham_pha", label: "Khám phá" },
         { href: "/cong_dong", label: "Cộng đồng" },
         { href: "/hop_tac", label: "Hợp tác" },

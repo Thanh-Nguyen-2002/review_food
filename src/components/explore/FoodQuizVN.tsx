@@ -33,7 +33,7 @@ export default function FoodQuizVN() {
 
     return (
         <>
-            <RevealOnScroll delay={200}>
+            <RevealOnScroll delay={150}>
                 <div className="py-2 text-center bg-white">
                     <div className="container mx-auto px-4">
                         <h2 className="text-4xl font-extrabold text-gray-900 mb-4 flex items-center justify-center gap-2">
@@ -49,7 +49,7 @@ export default function FoodQuizVN() {
 
             <section className="container mx-auto px-4 py-12 flex justify-center">
                 <div className="bg-white p-8 md:p-10 rounded-2xl shadow-2xl max-w-3xl w-full text-center border border-gray-100 relative overflow-hidden">
-                    <RevealOnScroll delay={200}>
+                    <RevealOnScroll delay={150}>
                         <div className="absolute top-0 left-0 w-24 h-24 bg-yellow-100 rounded-full opacity-50 blur-xl -translate-x-1/2 -translate-y-1/2"></div>
                         <div className="absolute bottom-0 right-0 w-32 h-32 bg-yellow-100 rounded-full opacity-50 blur-xl translate-x-1/2 translate-y-1/2"></div>
 
@@ -61,7 +61,7 @@ export default function FoodQuizVN() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                         {quizData.options.map((opt, i) => (
-                            <RevealOnScroll delay={200 * i} key={opt.text}>
+                            <RevealOnScroll delay={100 * i} key={opt.text}>
                                 <button
                                     onClick={() => handleOptionClick(opt.text, opt.isCorrect)}
                                     disabled={isAnswered}
@@ -105,7 +105,7 @@ export default function FoodQuizVN() {
                             <CountUp 
                                 key={score}
                                 end={score} 
-                                duration={3} 
+                                duration={4} 
                                 separator="," 
                                 className="font-extrabold text-yellow-600 ml-2 text-2xl animate-fade-in-up"
                             />

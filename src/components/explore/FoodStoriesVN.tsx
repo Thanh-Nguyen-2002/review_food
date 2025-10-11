@@ -30,7 +30,7 @@ export default function FoodStoriesVN() {
 
     return (
         <section className="bg-white text-gray-900">
-            <RevealOnScroll delay={200}>
+            <RevealOnScroll delay={150}>
                 <div className="py-10 text-center">
                     <div className="container mx-auto">
                         <h2 className="text-4xl font-extrabold text-yellow-500 mb-2 flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function FoodStoriesVN() {
                     const isOpen = expanded === story.title;
 
                     return (
-                        <RevealOnScroll key={story.title} delay={200 * i}>
+                        <RevealOnScroll key={story.title} delay={100 * i}>
                             <div
                                 className={`bg-${story.color}-50 p-6 rounded-lg shadow-md flex flex-col justify-between transition-all duration-300`}
                             >

@@ -32,7 +32,7 @@ export default function ExploreRecipesVN() {
 
     return (
         <div className="bg-white text-black">
-            <RevealOnScroll delay={200}>
+            <RevealOnScroll delay={150}>
                 <div className="py-12 text-center">
                     <div className="container mx-auto">
                         <h2 className="text-4xl font-extrabold text-yellow-500 mb-3 flex items-center justify-center gap-2">
@@ -48,7 +48,7 @@ export default function ExploreRecipesVN() {
 
             <section className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {recipes.map((r, i) => (
-                    <RevealOnScroll key={r.name} delay={200 * i}>
+                    <RevealOnScroll key={r.name} delay={100 * i}>
                         <div
                             className="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm 
                             hover:shadow-xl hover:border-yellow-400 transition-all duration-300 ease-out 

@@ -49,7 +49,7 @@ export default function VietnamCuisine() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 {regions.map((region, i) => (
-                    <RevealOnScroll key={region.name} delay={150 * i}>
+                    <RevealOnScroll key={region.name} delay={100 * i}>
                         <div
                             
                             className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300"
@@ -82,7 +82,7 @@ export default function VietnamCuisine() {
                     </RevealOnScroll>
                 ))}
             </div>
-            <RevealOnScroll delay={200}>
+            <RevealOnScroll delay={150}>
                 <div className="text-center mt-16">
                     <p className="text-gray-700 text-lg">
                             “Ẩm thực Việt – nơi hương vị kết nối trái tim.”

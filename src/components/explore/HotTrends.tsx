@@ -38,7 +38,7 @@ export default function HotTrendsVN() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,213,79,0.1),_transparent_70%)] 
             pointer-events-none">
             </div>
-            <RevealOnScroll delay={200}>
+            <RevealOnScroll delay={150}>
                 <div className="text-center relative z-10 mb-14">
                     <div className="flex justify-center items-center mb-3">
                         <Flame className="w-8 h-8 text-yellow-500 animate-pulse" />
@@ -57,7 +57,7 @@ export default function HotTrendsVN() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[1500px] mx-auto relative z-10">
                 {trends.map((item, i) => (
-                    <RevealOnScroll key={item.name} delay={150 * i}>
+                    <RevealOnScroll key={item.name} delay={100 * i}>
                         <div
                             
                             className="relative bg-white border border-gray-100 p-8 rounded-xl shadow-md hover:shadow-2xl 

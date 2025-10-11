@@ -32,7 +32,7 @@ export default function FoodChallengesVN() {
 
     return (
         <>
-            <RevealOnScroll delay={200}>
+            <RevealOnScroll delay={100}>
                 <div className="py-6
                 text-center bg-white">
                     <div className="container mx-auto px-4">
@@ -49,7 +49,7 @@ export default function FoodChallengesVN() {
 
             <section className="max-w-[1500px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {challenges.map((c, i) => (
-                    <RevealOnScroll key={c.title} delay={200 * i}>
+                    <RevealOnScroll key={c.title} delay={100 * i}>
                         <div
                             className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 relative overflow-hidden group"
                         >

@@ -37,16 +37,11 @@ export default function TextInfo() {
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link
                         href="/reviews"
-                        className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-md font-semibold text-center transition"
+                        className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 
+                            rounded-md font-semibold text-center transition cursor-pointer"
                     >
                         Xem Bài Review
                     </Link>
-                    {/* <Link
-                        href="/contact"
-                        className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-white px-6 py-3 rounded-md font-semibold text-center transition"
-                    >
-                        Gửi Review Của Bạn
-                    </Link> */}
                 </div>
             </div>
         </section>
