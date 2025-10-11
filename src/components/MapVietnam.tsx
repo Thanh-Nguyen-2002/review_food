@@ -1,10 +1,7 @@
 "use client";
 import { useState } from "react";
-import RevealOnScroll from "./RevealOnScroll";
-import Image from "next/image";
 import { MapPinned } from "lucide-react";
 import InfoBox from "./animations/InfoBox";
-import AnimationShowContent from "./animations/AnimationShowContent";
 
 interface Marker {
     id: number;
@@ -276,10 +273,9 @@ export default function MapVietnam() {
                 <div className="absolute top-3/5 left-0">
                     {selectedNane &&
                         <InfoBox 
-                            dataView={dataView}
-                        />
-                    }
-                </div>
+                            dataView={dataView} />
+                        }
+                    </div>
             </div>
 
         </section>
