@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
 import AnimationShowContent from "@/components/animations/AnimationShowContent";
+import FeaturedReviews from "@/components/reviews/FeaturedReviews";
 
 const reviews = [
     {
@@ -44,21 +45,20 @@ export default function Reviews() {
     const currentReview = reviews[current];
 
     return (
-        <section className="bg-white text-black py-16 px-6 max-w-[1500px] mx-auto">
+        <section className="text-black py-16 px-6 max-w-[1500px] mx-auto">
             <h1 className="text-4xl md:text-4xl font-bold text-center mb-10">
                 <span className="text-yellow-500">Review</span> Ẩm Thực Việt Nam
             </h1>
 
             <div className="relative flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
 
-                <div className="md:w-1/2 w-full relative">
+                <div className="md:w-1/2 w-full relative h-100">
                     <Image
                         src={currentReview.image}
                         alt={currentReview.title}
                         className="rounded-2xl shadow-lg w-full h-[400px] object-cover transform hover:scale-[1.03] 
-                        transition-transform duration-500"
-                        height={400}
-                        width={500}
+                        transition-transform duration-500 absolute"
+                        fill
                     />
 
 
@@ -127,6 +127,9 @@ export default function Reviews() {
                 </p>
                 <p className="text-sm text-yellow-600 mt-2">– Một người yêu phở –</p>
             </div>
+            
+            <FeaturedReviews />
+            
         </section>
     );
 }

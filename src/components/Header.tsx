@@ -10,7 +10,7 @@ export default function Header() {
     const pathName = usePathname()
     const links = [
         { href: "/", label: "Trang chủ" },
-        { href: "/reviews", label: "Bài Review" },
+        { href: "/reviews", label: "Review" },
         { href: "/dia_diem_am_thuc", label: "Địa điểm ẩm thực" },
         { href: "/kham_pha", label: "Khám phá" },
         { href: "/cong_dong", label: "Cộng đồng" },
@@ -29,7 +29,7 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <nav className="hidden md:flex space-x-8 text-sm font-medium">
+                <nav className="hidden lg:flex space-x-8 text-sm font-medium">
                     {links.map((link) => (
                         <Link 
                             key={link.href}
@@ -46,7 +46,7 @@ export default function Header() {
                 </nav>
 
                 <button
-                    className="md:hidden p-2 text-white"
+                    className="lg:hidden p-2 text-white"
                     onClick={() => setOpen(!open)}
                 >
                     {open ? <X size={24} /> : <Menu size={24} />}
@@ -54,16 +54,23 @@ export default function Header() {
             </div>
 
             {open && (
-                <div className="md:hidden bg-black border-t border-white/10">
+                <div className="lg:hidden bg-black border-t border-white/10">
                     <nav className="flex flex-col space-y-4 px-6 py-4 text-sm font-medium">
-                        <Link href="/" className="hover:text-amber-400 transition">Trang chủ</Link>
-                        <Link href="/reviews" className="hover:text-amber-400 transition">Bài Review</Link>
-                        <Link href="/about" className="hover:text-amber-400 transition">Giới thiệu</Link>
-                        <Link href="/contact" className="hover:text-amber-400 transition">Liên hệ</Link>
-                        <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-4 py-2 rounded-md transition w-fit">
-                            Gửi Review
-                        </button>
+                        {links.map((link) => (
+                            <Link 
+                                key={link.href}
+                                href={link.href}
+                                className={`transition
+                                    ${pathName === link.href
+                                    ?  "text-amber-500 border-b-2 border-amber-500 pb-1" 
+                                    :  "hover:text-amber-400" }
+                                `}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
                     </nav>
+                    
                 </div>
             )}
         </header>

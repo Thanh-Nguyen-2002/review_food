@@ -4,6 +4,7 @@ import RevealOnScroll from "./RevealOnScroll";
 import Image from "next/image";
 import { MapPinned } from "lucide-react";
 import InfoBox from "./animations/InfoBox";
+import AnimationShowContent from "./animations/AnimationShowContent";
 
 interface Marker {
     id: number;
@@ -251,6 +252,26 @@ export default function MapVietnam() {
                         />
                     </div>
                 ))}
+
+                <div className="absolute right-[4%] top-[47%]">
+                    <span className="mr-2 text-sm md:text-base font-semibold text-white bg-black/60 px-2 py-0.5 rounded-md shadow-md whitespace-nowrap">
+                            Hoàng Sa
+                    </span>
+                    <button 
+                        className={`w-2 h-2 bg-yellow-600 rounded-full
+                            hover:scale-140 transition duration-300 cursor-pointer`}
+                    />
+                </div>
+
+                <div className="absolute right-0 top-[75%]">
+                    <span className="mr-2 text-sm md:text-base font-semibold text-white bg-black/60 px-2 py-0.5 rounded-md shadow-md whitespace-nowrap">
+                            Trường Sa
+                    </span>
+                    <button 
+                        className={`w-2 h-2 bg-yellow-600 rounded-full
+                            hover:scale-140 transition duration-300 cursor-pointer`}
+                    />
+                </div>
 
                 <div className="absolute top-3/5 left-0">
                     {selectedNane &&

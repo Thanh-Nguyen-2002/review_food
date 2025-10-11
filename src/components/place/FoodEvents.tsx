@@ -67,7 +67,7 @@ export default function FoodEvents() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {events.map((e, i) => (
-                    <RevealOnScroll key={i} delay={i * 100}>
+                    <RevealOnScroll key={i} delay={i * 50}>
                         <div className="bg-yellow-50 border-2 border-gray-200 rounded-xl shadow 
                                 p-5 hover:shadow-lg transition cursor-pointer hover:border-yellow-300"
                         >

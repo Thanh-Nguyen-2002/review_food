@@ -25,19 +25,19 @@ export default function AboutUs() {
                     </section>
                 </RevealOnScroll>
                 <RevealOnScroll delay={200}>
-                    <section className="bg-gray-900 p-10 rounded-lg shadow-xl animate-slide-up">
+                    <section className="bg-gray-50 p-10 rounded-lg shadow-xl animate-slide-up">
                         <h2 className="text-4xl font-bold text-amber-400 mb-6 border-b-2 border-amber-400 pb-2 inline-block">
                             ReviewFood là ai?
                         </h2>
                         <div className="flex flex-col md:flex-row items-center gap-10">
                             <div className="md:w-1/2">
-                                <p className="text-lg text-gray-200 leading-relaxed mb-4">
+                                <p className="text-lg text-black leading-relaxed mb-4">
                                     ReviewFood được thành lập với sứ mệnh kết nối cộng đồng yêu ẩm thực.
                                     Chúng tôi không chỉ là một nền tảng đánh giá món ăn, mà còn là nơi
                                     khơi nguồn cảm hứng, chia sẻ những câu chuyện và trải nghiệm độc đáo
                                     đằng sau mỗi món ăn, mỗi nhà hàng.
                                 </p>
-                                <p className="text-lg text-gray-200 leading-relaxed">
+                                <p className="text-lg text-black leading-relaxed">
                                     Với hàng ngàn đánh giá chân thực và cộng đồng sôi nổi, ReviewFood tự hào
                                     là người bạn đồng hành tin cậy của bạn trên mọi hành trình ẩm thực.
                                 </p>
@@ -55,7 +55,7 @@ export default function AboutUs() {
                     </section>
                 </RevealOnScroll>
                 <RevealOnScroll delay={200}>
-                    <section className="bg-gray-900 p-10 rounded-lg shadow-xl animate-slide-up delay-200">
+                    <section className="bg-gray-50 p-10 rounded-lg shadow-xl animate-slide-up delay-200">
                         <h2 className="text-4xl font-bold text-amber-400 mb-8 border-b-2 border-amber-400 pb-2 inline-block">
                             Những Dấu Ấn Tự Hào
                         </h2>
@@ -81,24 +81,24 @@ export default function AboutUs() {
                 </RevealOnScroll>
 
                 <RevealOnScroll delay={200}>
-                    <section className="bg-gray-900 p-10 rounded-lg shadow-xl animate-slide-up delay-400">
+                    <section className="bg-gray-50 p-10 rounded-lg shadow-xl animate-slide-up delay-400">
                         <h2 className="text-4xl font-bold text-amber-400 mb-6 border-b-2 border-amber-400 pb-2 inline-block">
                             Câu Chuyện của Chúng Tôi
                         </h2>
                         <div className="flex flex-col md:flex-row-reverse items-center gap-10"> {/* Đổi chiều để ảnh bên trái */}
                             <div className="md:w-1/2">
-                                <p className="text-lg text-gray-200 leading-relaxed mb-4">
+                                <p className="text-lg text-black leading-relaxed mb-4">
                                     ReviewFood bắt đầu từ niềm đam mê nhỏ của một nhóm bạn thân yêu thích khám phá ẩm thực.
                                     Chúng tôi nhận ra rằng việc tìm kiếm thông tin đáng tin cậy về món ăn và nhà hàng
                                     thường khá khó khăn. Từ đó, ý tưởng xây dựng một cộng đồng nơi mọi người có thể
                                     dễ dàng chia sẻ và tìm kiếm các đánh giá chân thực đã ra đời.
                                 </p>
-                                <p className="text-lg text-gray-200 leading-relaxed mb-4">
+                                <p className="text-lg text-black leading-relaxed mb-4">
                                     Với những đêm thức trắng và sự cống hiến không ngừng, ReviewFood dần trở thành
                                     một nền tảng vững chắc. Chúng tôi luôn lắng nghe người dùng để cải thiện,
                                     mang đến những tính năng mới và trải nghiệm tốt nhất.
                                 </p>
-                                <p className="text-lg text-gray-200 leading-relaxed">
+                                <p className="text-lg text-black leading-relaxed">
                                     Mỗi đánh giá, mỗi chia sẻ của bạn đều là một phần quan trọng trong câu chuyện
                                     phát triển của ReviewFood.
                                 </p>
@@ -117,11 +117,11 @@ export default function AboutUs() {
                 </RevealOnScroll>
 
                 <RevealOnScroll delay={200}>
-                    <section className="bg-gray-900 p-10 rounded-lg shadow-xl animate-slide-up delay-600">
+                    <section className="bg-gray-50 p-10 rounded-lg shadow-xl animate-slide-up delay-600">
                         <h2 className="text-4xl font-bold text-amber-400 mb-8 border-b-2 border-amber-400 pb-2 inline-block">
                             Đối Tác & Tài Trợ
                         </h2>
-                        <p className="text-lg text-gray-200 leading-relaxed mb-8 text-center max-w-2xl mx-auto">
+                        <p className="text-lg text-black leading-relaxed mb-8 text-center max-w-2xl mx-auto">
                             ReviewFood tự hào được hợp tác với các thương hiệu ẩm thực hàng đầu
                             và nhận được sự tài trợ từ những tổ chức uy tín, giúp chúng tôi
                             không ngừng phát triển và mang đến giá trị tốt nhất cho cộng đồng.
@@ -170,7 +170,7 @@ export default function AboutUs() {
                 </RevealOnScroll>
 
                 <RevealOnScroll delay={200}>
-                    <section className="bg-gray-900 p-10 rounded-lg shadow-xl animate-slide-up delay-800">
+                    <section className="bg-gray-50 p-10 rounded-lg shadow-xl animate-slide-up delay-800">
                         <h2 className="text-4xl font-bold text-amber-400 mb-8 border-b-2 border-amber-400 pb-2 inline-block">
                             Tầm Nhìn & Sứ Mệnh
                         </h2>

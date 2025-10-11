@@ -67,37 +67,6 @@ export default function Contact() {
                     />
                 </div>
 
-                <div className="mb-16 text-center">
-                    <h2 className="text-3xl font-bold text-amber-500 mb-8 animate-fade-in delay-200">
-                        Kết nối với chúng tôi
-                    </h2>
-                    <div className="flex justify-center space-x-6">
-                        <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
-                            className="transform hover:scale-110 transition-transform duration-200 text-black hover:text-black"
-                        >
-                            <Facebook size={56} strokeWidth={1.5} />
-                        </Link>
-
-                        <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
-                            className="transform hover:scale-110 transition-transform duration-200 text-black"
-                        >
-                            <Twitter size={56} strokeWidth={1.5} />
-                        </Link>
-
-                        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
-                            className="transform hover:scale-110 transition-transform duration-200 text-black"
-                        >
-                            <Linkedin size={56} strokeWidth={1.5} />
-                        </Link>
-
-                        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-                            className="transform hover:scale-110 transition-transform duration-200 text-black"
-                        >
-                            <Instagram size={56} strokeWidth={1.5} />
-                        </Link>
-                    </div>
-                </div>
-
                 <div className="bg-gray-800 p-8 rounded-lg shadow-inner"> 
                     <h2 className="text-3xl font-bold text-amber-400 text-center mb-8 animate-fade-in delay-300">
                         Gửi tin nhắn cho chúng tôi

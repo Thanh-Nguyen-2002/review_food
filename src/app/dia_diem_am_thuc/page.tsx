@@ -61,14 +61,16 @@ export default function Places() {
                 <RevealOnScroll delay={200}>
                     <div className="relative flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
 
-                        <div className="md:w-1/2 w-full relative">
+                        <div className="md:w-1/2 w-full relative h-100">
                             <Image
                                 src={currentPlace.image}
                                 alt={currentPlace.title}
                                 className="rounded-2xl shadow-lg w-full h-[400px] object-cover transform hover:scale-[1.03] 
-                                transition-transform duration-500"
-                                height={400}
-                                width={500}
+                                transition-transform duration-500 absolute"
+                                // height={400}
+                                // width={500}
+                                // style={{height: "auto"}}
+                                fill
                             />
 
                             <button
