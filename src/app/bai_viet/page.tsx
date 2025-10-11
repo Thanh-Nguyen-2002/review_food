@@ -1,6 +1,15 @@
 import CommentSection from "@/components/blog/CommentSection";
 import HighlightFoodCard from "@/components/blog/HighlightFoodCard";
 
+export const metadata = {
+    title: "Blog Ẩm Thực Việt Nam | ReviewFood",
+    description: `
+        Nơi chia sẻ câu chuyện, bí quyết và hành trình khám phá ẩm thực Việt Nam.
+        Cùng ReviewFood tìm hiểu văn hoá, món ngon và xu hướng ẩm thực mới nhất.
+    `
+};
+
+
 export default function Blog() {
     return (
         <main className="bg-white text-gray-800 max-w-[1500px] mx-auto px-6 py-10">
